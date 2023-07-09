@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <h2>Форма</h2>
+        <form name="form" class="Form" novalidate>
+            <label for="Name" class="form__label">Имя:</label>
+            <input type="text" id="Name" name="Name" class="form__input" placeholder="Введите ваше имя" required
+                minlength="2" maxlength="20" />
+            <span class="error-message" id="name-error"></span>
+            <br />
+
+            <label for="Email" class="form__label">Email:</label>
+            <input type="email" id="Email" name="Email" class="form__input" placeholder="Введите вашу почту" required />
+            <span class="error-message" id="email-error"></span>
+            <br />
+
+
+            <label for="Age" class="form__label">Возраст:</label>
+            <input type="age" id="Age" name="Age" class="form__input" placeholder="Введите ваш возраст" required />
+            <span class="error-message" id="age-error"></span>
+            <br />
+
+            <input type="radio" name="gender" value="male"> Женский<br>
+            <input type="radio" name="gender" value="female"> Мужской<br>
+
+
+            <label for="Select" class="form__label">Выберите профессию:</label>
+            <select id="Select" name="Select" class="form__select" placeholder="Введите вашу профессию" required>
+                <option value="Опция 1">Врач</option>
+                <option value="Опция 2">Программист</option>
+                <option value="Опция 3">Учитель</option>
+                <option value="Опция 4">Дизайнер</option>
+                <option value="Опция 5">Инженер</option>
+                <option value="Опция 6">Продавец</option>
+                <option value="Опция 7">Другое</option>
+            </select>
+            <br />
+
+            <label for="userPassword">Пароль:</label>
+            <input name="Password" id="userPassword" type="password" placeholder="Введите ваше пароль" required
+                minlength="8" maxlength="20">
+            <span class="error-message" id="password-error"></span>
+            <br />
+
+            <label for="userPasswordSecond">Повторите Пароль:</label>
+            <input name="PasswordSecond" id="userPasswordSecond" type="password" placeholder="Повторите ваше пароль"
+                required minlength="8" maxlength="20">
+            <span class="error-message" id="password1-error"></span>
+            <br />
+
+            <label class="form__label">Согласны с обработкой пользовательских данных:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" class="form__checkbox" required />
+            <label for="checkbox">Да</label>
+            <span class="error-message" id="checkbox-error"></span>
+            <br />
+
+            <button type="submit" name="firstButton" class="form__submit">Отправить</button>
+            <p class="error-message" id="errorMessage"></p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
